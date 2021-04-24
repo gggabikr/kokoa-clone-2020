@@ -25,6 +25,12 @@
   margin-top: 8px;
   color: rgba(0, 0, 0, 0.5);
   font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#user-component__profile-msg {
+  width: 95%;
 }
 
 .user-component__avatar--xl {
