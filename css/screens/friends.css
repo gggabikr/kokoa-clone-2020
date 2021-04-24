@@ -4,7 +4,7 @@
   background-color: #fafafa;
   padding: 15px 0px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -32,4 +32,51 @@
 
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__fds {
+  margin-bottom: 10px;
+}
+
+.user-component__title--fds-name {
+  font-size: 16px;
+}
+
+.user-component__profile-msg {
+  font-weight: 400;
+  text-align: left;
+  z-index: 1;
+  max-width: fit-content;
+  width: 170px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.user-component__profile-column {
+  position: relative;
+  align-items: center;
+}
+
+.user-component__profile-text {
+  position: absolute;
+  right: 15px;
+  top: 7px;
+  font-size: 14px;
+  word-break: word-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 78%;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.user-component__profile-msg-background {
+  width: 10em;
+  height: 60px;
 }
