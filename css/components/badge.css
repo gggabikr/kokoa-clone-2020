@@ -1,0 +1,38 @@
+.badge {
+  background-color: tomato;
+  display: flex;
+  border-radius: 50%;
+}
+
+.badge--nav {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+
+.badge--nav2 {
+  position: absolute;
+  left: 30px;
+  bottom: 23px;
+}
+
+.badge--header {
+  position: absolute;
+  right: -7px;
+  top: -8px;
+}
+
+.badge--small {
+  width: 7px;
+  height: 7px;
+}
+
+.badge--large {
+  font-size: 14px;
+  width: 22px;
+  height: 22px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
