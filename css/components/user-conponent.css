@@ -5,6 +5,10 @@
   padding: 5px 0px 0px 0px;
 }
 
+.user-component:first-child {
+  border-top: none;
+}
+
 .user-component,
 .user-component__column:first-child {
   display: flex;
@@ -60,10 +64,6 @@
 
 .user-component__title--not-bold {
   font-weight: 400;
-}
-
-.user-component__no-border {
-  border: none;
 }
 
 .user-component__num-alarm {

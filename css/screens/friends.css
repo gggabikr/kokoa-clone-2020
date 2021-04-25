@@ -77,3 +77,11 @@
   width: 10em;
   height: 60px;
 }
+
+.user-component:nth-child(2) {
+  border-top: none;
+}
+
+.user-component__fds:nth-child(2) {
+  border-top: none;
+}
