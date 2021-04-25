@@ -54,11 +54,19 @@
 
 .open-post {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0px 5px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.open-post:last-child {
+  border-bottom: none;
 }
 
 .open-post__title {
   font-weight: 600;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 .open-post__hashtags {
@@ -67,7 +75,7 @@
 }
 
 .open-post__members {
-  margin-top: 7px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
 }
@@ -94,4 +102,31 @@
 
 .open-post__members-status {
   color: #ff95d5;
+}
+
+.open-post__photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12.5px;
+}
+
+.open-post__heart-count span {
+  margin-left: 4px;
 }
