@@ -16,7 +16,7 @@
   height: 70px;
   border-radius: 38.5%;
   margin-right: 20px;
-  border: 1.5px solid rgba(73, 73, 87, 0.4);
+  border: 1.5px solid rgba(73, 73, 87, 0.3);
 }
 
 .user-component__title {
@@ -24,12 +24,20 @@
   font-size: 22px;
 }
 
+.user-component__title--chats {
+  font-size: 18px;
+}
+
 .user-component__subtitle {
   margin-top: 8px;
   color: rgba(0, 0, 0, 0.5);
-  font-size: 17px;
+  font-size: 15px;
+  width: 280px;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 #user-component__profile-msg {
@@ -56,4 +64,25 @@
 
 .user-component__no-border {
   border: none;
+}
+
+.user-component__num-alarm {
+  display: flex;
+}
+
+.user-component__num-alarm span:last-child {
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-component__time {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-component__column:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
