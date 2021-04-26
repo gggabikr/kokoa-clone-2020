@@ -1,0 +1,11 @@
+.settings-list__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.settings-list__setting i {
+    margin-right: 20px;
+    font-size: 24px;
+    color: rgb(rgba(77, 77, 77, 0.9);
