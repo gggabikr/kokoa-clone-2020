@@ -1,11 +1,24 @@
 .settings-list__setting {
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .settings-list__setting i {
-    margin-right: 20px;
-    font-size: 24px;
-    color: rgb(rgba(77, 77, 77, 0.9);
+  margin-right: 20px;
+  font-size: 24px;
+  color: rgba(77, 77, 77, 0.9);
+}
+
+.settings-list__setting-column:last-child {
+  opacity: 0.5;
+  font-size: 18px;
+}
+
+#setting-extra-space {
+  padding-bottom: 45px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
