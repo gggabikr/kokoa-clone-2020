@@ -37,6 +37,11 @@
 
 .user-component__title--fds-name {
   font-size: 16px;
+  transition: all 0.1s linear;
+}
+.user-component__fds:hover {
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .user-component__profile-msg {
