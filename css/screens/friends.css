@@ -109,6 +109,6 @@
   color: rgb(39, 5, 1);
   box-sizing: border-box;
   z-index: 3;
-  animation: hideSplashScreen 0.8s ease-in-out forwards;
-  animation-delay: 0.3s;
+  animation: hideSplashScreen 0.6s ease-in-out forwards;
+  animation-delay: 0.2s;
 }
