@@ -92,3 +92,72 @@
 .msg-row--own .msg-row__info {
   flex-direction: row-reverse;
 }
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.reply .reply__column:first-child {
+  width: 4%;
+  margin-right: 15px;
+  font-size: 20px;
+}
+.reply .reply__column:last-child {
+  width: 96%;
+  position: relative;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+
+.reply i:active {
+  opacity: 1;
+}
+
+.reply input {
+  padding: 10px 15px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.reply__column:last-child > i {
+  right: 40px;
+  top: 10px;
+  font-size: 25px;
+}
+
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.reply__column button i {
+  opacity: 0.7;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+  font-size: 16px;
+}
