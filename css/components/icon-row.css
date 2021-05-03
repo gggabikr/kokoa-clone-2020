@@ -1,6 +1,7 @@
 .icon-row {
   display: flex;
   justify-content: space-around;
+  height: 90px;
 }
 
 .icon-row__icon {
@@ -13,12 +14,21 @@
   font-size: 35px;
   color: inherit;
   opacity: 0.9;
+  transition: all 0.1s ease-in-out;
 }
 
 .icon-row__icon span {
   margin-top: 15px;
   text-align: center;
   font-weight: 500;
+  transition: all 0.1s ease-in-out;
+}
+
+.icon-row__icon:hover i {
+  font-size: 40px;
+}
+.icon-row__icon:hover span {
+  font-size: 18px;
 }
 
 .no-show {

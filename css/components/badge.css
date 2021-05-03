@@ -4,16 +4,30 @@
   border-radius: 50%;
 }
 
+@keyframes badgeAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-3px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .badge--nav {
   position: absolute;
   left: 20px;
   bottom: 15px;
+  animation: badgeAnimation 2s ease-in-out infinite;
 }
 
 .badge--nav2 {
   position: absolute;
   left: 30px;
   bottom: 23px;
+  animation: badgeAnimation 2s ease-in-out infinite;
 }
 
 .badge--header {

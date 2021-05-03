@@ -18,3 +18,38 @@
 #screen-header__icons--find {
   position: relative;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 1.5s ease-in-out infinite;
+}
+
+@keyframes danceMusicNote {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: translateX(-5px) translateY(-7px) rotateZ(20deg);
+  }
+  50% {
+    transform: none;
+  }
+  75% {
+    transform: translateX(5px) translateY(-7px) rotateZ(-20deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: danceMusicNote 2s ease-in-out infinite;
+}
