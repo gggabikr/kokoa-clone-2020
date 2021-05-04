@@ -1,0 +1,61 @@
+<head>
+  <style>
+    img {
+      border: 5px solid black;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      transition: transform 2s linear;
+    }
+    span {
+      display: none;
+      font-size: 100px;
+    }
+    @media screen and (max-width: 600px) {
+      img {
+        border-color: red;
+        border-width: 50px;
+      }
+    }
+    @media screen and (min-width: 601px) and (max-width: 1000px) {
+      img {
+        border-color: blue;
+        border-width: 50px;
+      }
+    }
+    @media screen and (min-width: 1001px) and (max-width: 1400px) {
+      img {
+        border-color: violet;
+        border-width: 50px;
+      }
+    }
+    @media screen and (min-width: 1401px) {
+      img {
+        border-color: yellowgreen;
+        border-width: 50px;
+      }
+    }
+    @media screen and (orientation: portrait) {
+      body {
+        background-color: yellow;
+      }
+      span {
+        display: block;
+      }
+    }
+    @media print {
+      body {
+        background-color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <img id="pug" src="img/pugs.jpg" />
+    <img id="poop" src= img/funny-poop.jpg
+    <br />
+    <br />
+    <span>Please flip your phone to landscape mode :(</span>
+  </form>
+</body>

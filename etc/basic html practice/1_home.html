@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+      <title>Home - My first website.</title>
+      <meta charset="utf-8" />
+    <meta name="description" content="This is my website" />
+    <meta content="Jason's first website name="description"/>
+    <meta property="og:image" content="img/funny_poop.jpg" />
+    <style>
+        h1{
+            color:rgb(192, 8, 94);
+            font-size:35px;
+            text-align:center;
+        }
+        .sub-head{
+            text-align:center;
+            font-size:25px;
+        }
+        span{
+            display:block;
+        }
+        body{
+            margin:20px;
+            background-color: rgb(223, 223, 252);
+        }
+        .back-frame{
+            border-radius: 20px;
+            border: solid;
+            border-color: rgb(116,100,116);
+        }
+        .titles{
+            margin:20px;
+            background-color:thistle;
+            width:500px;
+        }
+        form{
+            background-color: thistle;
+            opacity: 25;
+        }
+        header{
+            display:flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items:center;
+        }
+        .abc{
+            margin-left:20px;
+        }
+        .radius{
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .flexible{
+            display:flex;
+            height: 3vh;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #aa{background-color: aqua;
+            height:140px;
+            width: 140px;}
+        #bb{background-color:violet;
+            height:100px;
+            width: 100px;}
+        #cc{background-color: yellow;
+            height:60px;
+            width: 60px;}
+        #dd{background-color: green;
+            height:20px;
+            width: 20px;
+            }
+        footer{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        audio{
+            position: absolute;
+            left: 20px;
+            bottom: 20px;}
+        input{
+            border: 1px solid black;
+        }
+        input:required{
+            border-color: tomato;
+        }
+    </style>
+    <link 
+      rel="shortcut icon"
+      href="img/download_btn_brush.png"
+      sizes="16x16
+    32x32 64x64"
+    />
+    <!-- <link href="2_styles.css" rel="stylesheet"/> -->
+  </head>
+
+  <body>
+    <header>
+        <div class="titles back-frame">
+            <h1>Hello <sup>this</sup> is <sub>my</sub> website!</h1>
+        </div>
+        <div class="titles back-frame sub-head">
+            <h3>Sign up for free!</h3>
+        </div>
+    </header>
+    <form class="back-frame">
+        <div class="flexible">
+            <label for="date">Today's date</label> 
+            <input id="date" type="date"/>
+            <label for="profile">Profile Photo</label>
+            <input id="profile" type="file" accept="image/*" />
+            <label for="resume">Resume<label/>
+            <input id="resume" type="file" accept=".pdf, .txt" />
+        </div>
+        <br>
+        <section class="flexible abc">
+            <div>
+                <label for="Your_website">Your Website</label>
+                <input id="Your_website" placeholder="URL" type="url"/>
+            </div>
+            <div>
+                <label for="email_address">Email</label>
+                <input id="email_address" required placeholder="Email Address" type="email"/>
+            </div>
+        </section>
+        <br/>
+        <main class="flexible abc">
+            <div>
+                <label for="first_name">First_name</label>
+                <input id="first_name" required placeholder="First Name" type="text" />
+            </div>
+            <div>
+                <label for="Last_name">Last_name</label>
+                <input id="Last_name"required placeholder="Last Name" type="text" />
+            <div>
+        </main>
+        <br/>
+        <main class="flexible abc">
+            <div>
+                <label for="ID">ID</label>
+                <input id="ID" required placeholder="ID" minlength="5" type="text" />
+            </div>
+            <div>
+                <label for="Password">Password</label>
+                <input id="Password" required placeholder="Password" minlength="6" type="password" />
+            </div>
+            <input type="submit" value="Create Account" />
+        </main>
+    </form>
+
+    <br>
+    <footer>
+        <img src="character_dead.png" />
+        <div class="radius" id="aa">
+            <div class="radius" id="bb">
+                <div class="radius" id="cc">
+                    <div class="radius" id="dd">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/character_front.png" />
+    </footer>
+    <br>
+    <span class="sub-head">Good Bye!</span>
+    <audio controls="enabled" autoplay="enabled" src="Eternal Snow.mp3"></audio>
+  </body>
+</html>
